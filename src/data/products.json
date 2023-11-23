@@ -1,0 +1,30 @@
+[
+    {
+      "id": 1,
+      "name": "SAMSUNG Galaxy S23 Ultra 5G",
+      "curr_price": 154999,
+      "del_price": 185999,
+      "rating": 4.5,
+      "description": "12 GB RAM | 1 TB ROM.",
+      "imagePath": "https://images.samsung.com/is/image/samsung/p6pim/in/2302/gallery/in-galaxy-s23-s918-sm-s918bzgcins-thumb-534863401?imwidth=480"
+    },
+    {
+      "id": 2,
+      "name": "APPLE iPhone 15 Pro Max -Blue Titanium",
+      "curr_price": 199900,
+      "del_price": 210999,
+      "rating": 4.0,
+      "description": "1 TB ROM | A17 Pro Chip",
+      "imagePath": "https://media-ik.croma.com/prod/https://media.croma.com/image/upload/v1694674381/Croma%20Assets/Communication/Mobiles/Images/300821_0_onayra.png?tr=w-640"
+    },
+    {
+      "id": 3,
+      "name": "SAMSUNG Galaxy Z Fold5 -Icy Blue",
+      "curr_price": 184999,
+      "del_price": 199999,
+      "rating": 5.0,
+      "description": "12 GB RAM | 1 TB ROM.",
+      "imagePath": "https://images.samsung.com/is/image/samsung/p6pim/in/2307/gallery/in-galaxy-z-fold5-f946-sm-f946blbhins-thumb-537240556?imwidth=480"
+    }
+    
+  ]

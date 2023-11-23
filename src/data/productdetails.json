@@ -1,0 +1,111 @@
+[
+    {
+      "id": 1,
+      "name": "SAMSUNG Galaxy S23 Ultra 5G (Green, 1 TB) (12 GB RAM)",
+      "curr_price": 154999,
+      "del_price": 185999,
+      "rating": 4.5,
+      "highlights": "12 GB RAM | 1 TB ROM, 17.27 cm (6.8 inch) Quad HD+ Display, 200MP + 10MP + 12MP + 10MP | 12MP Front Camera, 5000 mAh Lithium Ion Battery, Qualcomm Snapdragon 8 Gen 2 Processor",
+      "description": "Get a smartphone for yourself that can detect your moods and react appropriately. The Samsung Galaxy Ultra's potent processor and advanced camera sensor can handle low light and noise reduction. The phone's Snapdragon 8 Gen 2 processor, which also provides a long battery life to carry you through even the busiest days, also enables quick gaming and video streaming. You can also launch Expert RAW to take high-resolution RAW photos that are vivid and packed with information. Moreover, Dynamic AMOLED 2X offers clear, brilliant details in both bright and low-light conditions. Additionally, to smooth up gaming and save power, the refresh rate is automatically optimised with 120 Hz technology.",
+      "imagePath1": "https://images.samsung.com/is/image/samsung/p6pim/in/2302/gallery/in-galaxy-s23-s918-sm-s918bzgcins-thumb-534863401?imwidth=480",
+      "imagePath2": "https://images.samsung.com/is/image/samsung/p6pim/in/2302/gallery/in-galaxy-s23-s918-sm-s918bzgcins-thumb-534863398?imwidth=480",
+      "imagePath3": "https://images.samsung.com/is/image/samsung/p6pim/in/2302/gallery/in-galaxy-s23-s918-sm-s918bzgcins-thumb-534863384?imwidth=480",
+
+      "reviews": [
+        {
+          "id": 101,
+          "user": "Shamik",
+          "title": "Awesome",
+          "comment": "I am thankful to almighty god to let me buy my first flagship dream device. This works like the smoothest butter I have ever seen. You throw anything on it, and it makes it work like a charm.",
+          "rating": 5
+        },
+        {
+          "id": 102,
+          "user": "Nikhil",
+          "title": "Brilliant",
+          "comment": "Excellent product and awesome features , zoom is beyond comparison Excellent display and good battery life. S pen is a master in it's own league. While sticking screen guards Kindly make sure glue doesn't leak to the speaker or S pen modules as it may create an issue Inorder to avail the offer Happy purchasing",
+          "rating": 4.5
+        },
+        {
+          "id": 103,
+          "user": "Hemanth",
+          "title": "Worth every penny",
+          "comment": "I ordered the product during pre-book period, exchanging my old OP6. The product is great, the seller delivered in time. The exchange process with Flipkart was also great. After the return period I got my Galaxy buds 2 and Watch 4 classic as well. The camera quality is excellent, the battery life is great as well. I am getting around 10 hours SOT, and 24 hours total time in a full recharge.OneUI is one of the best Android experience you can get. Overall a great deal.",
+          "rating": 4.0
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "APPLE iPhone 15 Pro Max (Blue Titanium, 1 TB) A17 Pro",
+      "curr_price": 199900,
+      "del_price": 210999,
+      "rating": 4.0,
+      "highlights": "1 TB ROM, 17.02 cm (6.7 inch) Super Retina XDR Display, 48MP + 12MP + 12MP | 12MP Front Camera, A17 Pro Chip, 6 Core Processor Processor",
+      "description": "iPhone 15 Pro Max, a titanium marvel, boasts an aerospace-grade build, making it the lightest Pro model ever. The A17 Pro Chip marks a historic leap in Apple GPUs, delivering unparalleled graphics performance and immersive gaming experiences. The camera system shines with a 48 MP Main camera, offering remarkable detail and automatic portrait enhancements. Convenience is key with the Action button for quick tasks and Focus filters. Plus, it's USB 3 compatible, revolutionizing data transfer speeds. This iPhone even shares its charging cable with your Mac or iPad. Embrace innovation, cut cable clutter, and elevate your mobile experience with the iPhone 15 Pro Max. iPhone 15 Pro Max is the first iPhone to support USB 3, for a huge leap in data transfer speeds and faster pro workflows than ever before.",
+      "imagePath1": "https://media-ik.croma.com/prod/https://media.croma.com/image/upload/v1694674381/Croma%20Assets/Communication/Mobiles/Images/300821_0_onayra.png?tr=w-640",
+      "imagePath2": "https://media-ik.croma.com/prod/https://media.croma.com/image/upload/v1694674365/Croma%20Assets/Communication/Mobiles/Images/300821_1_qi8h1o.png?tr=w-640",
+      "imagePath3": "https://media-ik.croma.com/prod/https://media.croma.com/image/upload/v1694674364/Croma%20Assets/Communication/Mobiles/Images/300821_2_jcdluj.png?tr=w-640",
+
+      "reviews": [
+        {
+          "id": 101,
+          "user": "Shamik",
+          "title": "Awesome",
+          "comment": "I am thankful to almighty god to let me buy my first flagship dream device. This works like the smoothest butter I have ever seen. You throw anything on it, and it makes it work like a charm.",
+          "rating": 5
+        },
+        {
+          "id": 102,
+          "user": "Nikhil",
+          "title": "Brilliant",
+          "comment": "Excellent product and awesome features , zoom is beyond comparison Excellent display and good battery life. S pen is a master in it's own league. While sticking screen guards Kindly make sure glue doesn't leak to the speaker or S pen modules as it may create an issue Inorder to avail the offer Happy purchasing",
+          "rating": 4.5
+        },
+        {
+          "id": 103,
+          "user": "Hemanth",
+          "title": "Worth every penny",
+          "comment": "I ordered the product during pre-book period, exchanging my old OP6. The product is great, the seller delivered in time. The exchange process with Flipkart was also great. After the return period I got my Galaxy buds 2 and Watch 4 classic as well. The camera quality is excellent, the battery life is great as well. I am getting around 10 hours SOT, and 24 hours total time in a full recharge.OneUI is one of the best Android experience you can get. Overall a great deal.",
+          "rating": 4.0
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "name": "SAMSUNG Galaxy Z Fold 5 (Icy Blue, 1 TB)  (12 GB RAM)",
+      "curr_price": 184999,
+      "del_price": 199999,
+      "rating": 5.0,
+      "highlights": "12 GB RAM | 1 TB ROM, 15.75 cm (6.2 inch) Display, 50MP + 12MP + 10MP, 4400 mAh Battery, Snapdragon 8 Gen 2 Processor",
+      "description": "Enjoy seamless connectivity and uninterrupted streaming on this foldable, light and compact Samsung Galaxy Z Fold5 smartphone. Turn your phone into a mobile studio with the 30x Space and show your subjects what they see with the Dual Preview Mode. With a massive screen display of 19 cm, this phone offers a cinematic experience. You can do hassle free multitasking as the phone allows you to keep three windows at once and the taskbar can hold up to twelve apps for a smooth navigation. Elevate your performance with the Snapdragon 8 Gen 2 processor available in this smartphone. This phone is built with a top of the line water resistant material. Powered by a 4400 mAh dual battery, this phone supports endless music for up to 73 hours straight. Control many screens at once with the Multi Control feature.",
+      "imagePath1": "https://images.samsung.com/is/image/samsung/p6pim/in/2307/gallery/in-galaxy-z-fold5-f946-sm-f946blbhins-thumb-537240556?imwidth=480",
+      "imagePath2": "https://images.samsung.com/is/image/samsung/p6pim/in/2307/gallery/in-galaxy-z-fold5-f946-sm-f946blbhins-thumb-537240546?imwidth=480",
+      "imagePath3": "https://images.samsung.com/is/image/samsung/p6pim/in/2307/gallery/in-galaxy-z-fold5-f946-sm-f946blbhins-thumb-537240551?imwidth=480",
+
+      "reviews": [
+        {
+          "id": 101,
+          "user": "Shamik",
+          "title": "Awesome",
+          "comment": "I am thankful to almighty god to let me buy my first flagship dream device. This works like the smoothest butter I have ever seen. You throw anything on it, and it makes it work like a charm.",
+          "rating": 5
+        },
+        {
+          "id": 102,
+          "user": "Nikhil",
+          "title": "Brilliant",
+          "comment": "Excellent product and awesome features , zoom is beyond comparison Excellent display and good battery life. S pen is a master in it's own league. While sticking screen guards Kindly make sure glue doesn't leak to the speaker or S pen modules as it may create an issue Inorder to avail the offer Happy purchasing",
+          "rating": 4.5
+        },
+        {
+          "id": 103,
+          "user": "Hemanth",
+          "title": "Worth every penny",
+          "comment": "I ordered the product during pre-book period, exchanging my old OP6. The product is great, the seller delivered in time. The exchange process with Flipkart was also great. After the return period I got my Galaxy buds 2 and Watch 4 classic as well. The camera quality is excellent, the battery life is great as well. I am getting around 10 hours SOT, and 24 hours total time in a full recharge.OneUI is one of the best Android experience you can get. Overall a great deal.",
+          "rating": 4.0
+        }
+      ]
+    }
+  ]
+  
