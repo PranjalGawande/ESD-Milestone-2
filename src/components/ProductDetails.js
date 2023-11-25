@@ -75,7 +75,7 @@ export default function ProductDetails() {
     const selectedProduct = cartProductsData.find(
       (p) => String(p.id) === productId
     );
-    
+
     setcartProduct(selectedProduct);
   }, [productId]);
 
@@ -90,7 +90,7 @@ export default function ProductDetails() {
     return <div>Loading...</div>;
   }
 
-  const formatCurrency = (value) => { 
+  const formatCurrency = (value) => {
     const formatter = new Intl.NumberFormat("en-IN", {
       style: "currency",
       currency: "INR",
@@ -110,75 +110,87 @@ export default function ProductDetails() {
     <>
       <div className="product-d container d-flex flex-wrap ">
         <div className="container-fluid d-flex justify-content-around">
-          <div
-            id="carouselExample"
-            className="carousel carousel-dark slide d-flex justify-content-around"
-          >
-            <div className="carousel-indicators">
-              <button
-                type="button"
-                data-bs-target="#carouselExample"
-                data-bs-slide-to={0}
-                className="active"
-                aria-current="true"
-                aria-label="Slide 1"
-              />
-              <button
-                type="button"
-                data-bs-target="#carouselExample"
-                data-bs-slide-to={1}
-                aria-label="Slide 2"
-              />
-              <button
-                type="button"
-                data-bs-target="#carouselExample"
-                data-bs-slide-to={2}
-                aria-label="Slide 3"
-              />
-            </div>
-            <div className="carousel-inner">
-              <div className="carousel-item active">
-                <img
-                  src={product.imagePath1}
-                  className="d-block w-100"
-                  alt={product.name}
-                />
-              </div>
-              <div className="carousel-item">
-                <img
-                  src={product.imagePath2}
-                  className="d-block w-100"
-                  alt={product.name}
-                />
-              </div>
-              <div className="carousel-item">
-                <img
-                  src={product.imagePath3}
-                  className="d-block w-100"
-                  alt={product.name}
-                />
-              </div>
-            </div>
-            <button
-              className="carousel-control-prev"
-              type="button"
-              data-bs-target="#carouselExample"
-              data-bs-slide="prev"
+          <div className="left-prod container-fluid gx-5">
+            <div
+              id="carouselExample"
+              className="carousel carousel-dark slide d-flex justify-content-around"
             >
-              <span className="carousel-control-prev-icon" aria-hidden="true" />
-              <span className="visually-hidden">Previous</span>
-            </button>
-            <button
-              className="carousel-control-next"
-              type="button"
-              data-bs-target="#carouselExample"
-              data-bs-slide="next"
-            >
-              <span className="carousel-control-next-icon" aria-hidden="true" />
-              <span className="visually-hidden">Next</span>
-            </button>
+              <div className="carousel-indicators">
+                <button
+                  type="button"
+                  data-bs-target="#carouselExample"
+                  data-bs-slide-to={0}
+                  className="active"
+                  aria-current="true"
+                  aria-label="Slide 1"
+                />
+                <button
+                  type="button"
+                  data-bs-target="#carouselExample"
+                  data-bs-slide-to={1}
+                  aria-label="Slide 2"
+                />
+                <button
+                  type="button"
+                  data-bs-target="#carouselExample"
+                  data-bs-slide-to={2}
+                  aria-label="Slide 3"
+                />
+              </div>
+              <div className="carousel-inner">
+                <div className="carousel-item active">
+                  <img
+                    src={product.imagePath1}
+                    className="d-block w-100"
+                    alt={product.name}
+                  />
+                </div>
+                <div className="carousel-item">
+                  <img
+                    src={product.imagePath2}
+                    className="d-block w-100"
+                    alt={product.name}
+                  />
+                </div>
+                <div className="carousel-item">
+                  <img
+                    src={product.imagePath3}
+                    className="d-block w-100"
+                    alt={product.name}
+                  />
+                </div>
+              </div>
+              <button
+                className="carousel-control-prev"
+                type="button"
+                data-bs-target="#carouselExample"
+                data-bs-slide="prev"
+              >
+                <span className="carousel-control-prev-icon" aria-hidden="true" />
+                <span className="visually-hidden">Previous</span>
+              </button>
+              <button
+                className="carousel-control-next"
+                type="button"
+                data-bs-target="#carouselExample"
+                data-bs-slide="next"
+              >
+                <span className="carousel-control-next-icon" aria-hidden="true" />
+                <span className="visually-hidden">Next</span>
+              </button>
+
+            </div>
+            <div className="buttons container-fluid d-flex justify-content-around">
+              <button className="shadow btn btn-lg btn-warning" onClick={handleAddtoCart} >
+                Add to Cart
+              </button>
+              <Link to="/cart" className="shadow btn btn-lg btn-primary" onClick={handleAddtoCart}>
+                Buy Now
+              </Link>
+            </div>
           </div>
-          
+
+          {/* Product details */}
           <div className="product-details">
             <h2> {product.name}</h2>
             <h5>
@@ -188,8 +200,8 @@ export default function ProductDetails() {
                   starValue <= Math.floor(product.rating)
                     ? "fas fa-star"
                     : starValue - 0.5 <= product.rating
-                    ? "fas fa-star-half-alt"
-                    : "far fa-star";
+                      ? "fas fa-star-half-alt"
+                      : "far fa-star";
                 return (
                   <i
                     key={index}
@@ -200,11 +212,7 @@ export default function ProductDetails() {
               })}{" "}
               {product.rating.toFixed(1)}
             </h5>
-            {/* <span className="fas fa-star checked" />
-                        <span className="fas fa-star checked" />
-                        <span className="fas fa-star checked" />
-                        <span className="fas fa-star checked" />
-                        <span className="fas fa-star-half-alt checked" /> */}
+
             <h2> {formatCurrency(product.curr_price)} </h2>
             <p>
               <del>{formatCurrency(product.del_price)}</del>
@@ -213,50 +221,23 @@ export default function ProductDetails() {
             <p className="highlights"></p>
             <p className="text-bg-light">Highlights</p>
             {highlightsList}
-            {/* 12 GB RAM | 256 GB ROM
-                        <br />
-                        17.27 cm (6.8 inch) Quad HD+ Display
-                        <br />
-                        200MP + 10MP + 12MP + 10MP | 12MP Front Camera
-                        <br />
-                        5000 mAh Lithium Ion Battery
-                        <br />
-                        Qualcomm Snapdragon 8 Gen 2 Processor */}
+            
             <p />
             <p className="description container d-flex flex-wrap"></p>
             <p className="text-bg-light">Description</p>
             {product.description}
-            {/* Get a g smartphone for yourself that can detect your moods and react
-                        appropriately. The Samsung Galaxy Ultra's potent processor and advanced
-                        camera sensor can handle low light and noise reduction. The phone's
-                        Snapdragon 8 Gen 2 processor, which also provides a long battery life to
-                        carry you through even the busiest days, also enables quick gaming and
-                        video streaming. You can also launch Expert RAW to take high-resolution
-                        RAW photos that are vivid and packed with information. Moreover, Dynamic
-                        AMOLED 2X offers clear, brilliant details in both bright and low-light
-                        conditions. Additionally, to smooth up gaming and save power, the
-                        refresh rate is automatically optimised with 120 Hz technology. */}
             <p />
           </div>
         </div>
       </div>
-      <div className="buttons d-flex justify-content-around">
-        <button className="shadow btn btn-lg btn-warning" onClick={handleAddtoCart} >
-          Add to Cart
-        </button>
-        <Link to="/cart" className="shadow btn btn-lg btn-primary" onClick={handleAddtoCart}>
-          Buy Now
-        </Link>
-      </div>
-     
-      <div className="rating-review height-100 container d-flex justify-content-around align-items-center">
-        
-
-        <div className="reviews-submit card p-1">
+      
+      {/* Rating and Reviews */}
+      <div className="rating-review  container-fluid d-flex justify-content-around align-items-center">
+        <div className="reviews-submit card p-1"> 
           <h2 className="text-center row-gap-5">Submit a Review</h2>
           <span className="border-bottom" />
 
-            <div className="d-flex flex-wrap">
+          <div className="d-flex flex-wrap">
             <form onSubmit={handleReviewSubmit} className="row g-4">
               <div className="col-md-6">
                 <label htmlFor="user" className="form-label">
@@ -317,14 +298,14 @@ export default function ProductDetails() {
                 />
               </div>
 
-          <span className="border-bottom" />
-          <div className="buttons-review d-flex justify-content-around">
-            <button type="submit" className="shadow btn btn-lg btn-warning">
-              Submit Review
-            </button>
+              <span className="border-bottom" />
+              <div className="buttons-review d-flex justify-content-around">
+                <button type="submit" className="shadow btn btn-lg btn-warning">
+                  Submit Review
+                </button>
+              </div>
+            </form>
           </div>
-          </form>
-            </div>
         </div>
 
         <div className="reviews card p-1">
@@ -333,41 +314,41 @@ export default function ProductDetails() {
 
           {product.reviews.map((review) => (
             <div>
-            <div className="d-flex flex-wrap">
-              <div className="border-review"></div>
-              <div className="small-ratings">
-                {Array.from({ length: 5 }, (_, index) => {
-                  const starValue = index + 1;
-                  const starClass =
-                    starValue <= Math.floor(review.rating)
-                      ? "fas fa-star"
-                      : starValue - 0.5 <= review.rating
-                      ? "fas fa-star-half-alt"
-                      : "far fa-star";
-                  return (
-                    <i
-                      key={index}
-                      className={starClass}
-                      style={{ color: "orange" }}
-                    ></i>
-                  );
-                })}{" "}
-                {review.rating}
+              <div className="d-flex flex-wrap">
+                <div className="border-review"></div>
+                <div className="small-ratings">
+                  {Array.from({ length: 5 }, (_, index) => {
+                    const starValue = index + 1;
+                    const starClass =
+                      starValue <= Math.floor(review.rating)
+                        ? "fas fa-star"
+                        : starValue - 0.5 <= review.rating
+                          ? "fas fa-star-half-alt"
+                          : "far fa-star";
+                    return (
+                      <i
+                        key={index}
+                        className={starClass}
+                        style={{ color: "orange" }}
+                      ></i>
+                    );
+                  })}{" "}
+                  {review.rating}
+                </div>
+                <pre className="review-stat row-gap-5">
+                  {"  "}
+                  {review.title}
+                  {"  "}
+                </pre>
+                <p className="review-name text-dark-subtle">-{review.user}
+                </p>
               </div>
-              <pre className="review-stat row-gap-5">
-                {"  "}
-                {review.title}
-                {"  "}
-              </pre>
-              <p className="review-name text-dark-subtle">-{review.user}
-              </p>
-              </div>
-              <p className="card-text"  style={{ marginBottom: '10px' }}>
+              <p className="card-text" style={{ marginBottom: '10px' }}>
                 {review.comment}
               </p>
             </div>
           ))}
-          
+
         </div>
       </div>
     </>

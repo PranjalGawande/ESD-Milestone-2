@@ -148,14 +148,6 @@ export default function ProductList() {
                 
                 <td>
                   {item.curr_price !== undefined ? `${formatCurrency(calculateSubtotal(item))}` : 'Total not available'}
-                  {/* ₹1,24,999 */}
-                  {/* <span>
-                    <button
-                      
-                      className="remove btn btn-danger btn-sm" onClick={() => handleRemoveItem(item.id)}> 
-                      <i className="fas fa-trash"></i>                   
-                      </button>
-                  </span> */}
                 </td>
                 <td className="remove" data-th="remove">
                   <button className="btn btn-outline-danger btn-sm" onClick={() => handleRemoveItem(item.id)}>

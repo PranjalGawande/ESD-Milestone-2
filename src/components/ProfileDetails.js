@@ -34,6 +34,7 @@ const ProfileDetails = () => {
           </Link>
         </div>
       </div>
+      
       {/* Recent Orders */}
       <div className="recent-orders d-flex container justify-content-center">
         <h3>Recent Orders</h3>
