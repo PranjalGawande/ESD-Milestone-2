@@ -30,6 +30,12 @@ export default function ProductList() {
     updateLocalStorage(updatedProducts);
   };
 
+  const handleRemoveAllItems = () => {
+    setProducts([]);
+    // Optionally update local storage or perform any other necessary operations
+    updateLocalStorage([]); // If you want to update local storage with an empty array
+  };  
+
   const handleQuantityChange = (productId, quantity) => {
     setUserQuantities(prevQuantities => ({
       ...prevQuantities,
@@ -178,7 +184,7 @@ export default function ProductList() {
         <i className="fas fa-angle-left"></i>
         Continue Shopping
         </Link>
-      <Link to={'/'} className='checkout btn btn-info btn-lg rounded border-3'>
+      <Link to={'/'} className='checkout btn btn-info btn-lg rounded border-3' onClick={() => handleRemoveAllItems()}>
         Checkout
         <i className="fas fa-angle-right"></i>
         </Link>
